@@ -19,11 +19,6 @@ body{
     position: relative;
     left: -30px;
 }
-
-.mavixi{
-  color: #87C7FF;
-}
-
 .line-1 {
     position: relative;
     width: 24em;
@@ -103,7 +98,6 @@ body{
 }
 .btn-40 svg {
   display: block;
-  vertical-align: middle;
 }
 .btn-40 [hidden] {
   display: none;
@@ -198,6 +192,52 @@ body{
 .mobile{
   display: none;
 }
+
+
+.our{
+  position: relative;
+  width: 24em;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 60px;
+  left: -85px;
+  color: white;
+  font-family: 'Anonymous Pro', monospace;  
+  white-space: nowrap;
+  overflow: hidden;
+ /* Space between header and paragraph */
+}
+
+.spani{
+  color: #87C7FF;
+}
+.work-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  position: relative;
+  left: -70px;
+}
+.work-item {
+  border: 1px solid #eee;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: -5rem;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+
 
 /* Mobile styles */
 @media (max-width: 992px) {

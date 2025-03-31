@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./components/Navbar"
 import Cover from "./components/Cover"
+import Work from "./components/Work"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
     <Navbar />
     <Cover /> 
+    <Work />
 
     </>
   )
