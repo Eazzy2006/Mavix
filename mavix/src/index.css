@@ -237,6 +237,39 @@ body{
   font-weight: bold;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 22s linear infinite;
+}
+
+.marquee-text {
+  font-size: 6rem; /* Adjust the size as needed */
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 120px;
+  padding-right: 300px;
+  margin-top: 60px;
+  color: transparent;
+  -webkit-text-stroke: 2px white; /* Outline color and thickness */
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif; /* Customize font-family */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 
 /* Mobile styles */
@@ -297,4 +330,24 @@ body{
     display: block;
   }
 
+  .work-section{
+    position: relative;
+    top: 500px;
+  }
+
+  .our{
+    font-size: 50px;
+    position: relative;
+    left: -10px;
+  }
+
+  .work-grid{
+    position: relative;
+    left: -15px;
+  }
+
+  .read-more{
+    position: relative;
+    left: 55px;
+  }
 }

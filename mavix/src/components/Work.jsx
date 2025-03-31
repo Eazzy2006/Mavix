@@ -3,7 +3,7 @@ import React from "react";
 export default function Work() {
   return (
     <div className="work-section">
-      <h1 className="our"> <span className="spani">SHËRBIMET</span> TONA</h1>
+      <h1 className="our"> <span className="spani">SHËRBIMET</span> <br className="mobile"></br> TONA</h1>
 
       <div className="work-grid">
         <div className="work-item">
