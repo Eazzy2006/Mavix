@@ -11,9 +11,11 @@ export default function Marquee() {
             <p className="marquee-text">Create.</p>
             <p className="marquee-text">Captivate.</p>
             <p className="marquee-text">Web.</p>
-            <p className="marquee-text">3D.</p>
+            <p className="marquee-text">Sukses.</p>
+            <p className="marquee-text">Marketing.</p>
+            <p className="marquee-text">Strategji.</p>
             <p className="marquee-text">Interior.</p>
-            <p className="marquee-text">DESIGN.</p>
+            <p className="marquee-text">Impakt.</p>
           </div>
         </section>
       </div>
