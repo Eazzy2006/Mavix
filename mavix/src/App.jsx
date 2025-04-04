@@ -4,6 +4,8 @@ import Cover from "./components/Cover"
 import Work from "./components/Work"
 import Marquee from "./components/Marquee"
 import Testimonial from "./components/Testimonials"
+import Bashk from "./components/Bashk"
+import ContactsPage from "./components/Contact"
 
 function App() {
 
@@ -16,7 +18,8 @@ function App() {
     <Work />
     <Marquee />
     <Testimonial />
-
+    <Bashk />
+    <ContactsPage />
     </>
   )
 }

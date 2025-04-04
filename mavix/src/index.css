@@ -139,56 +139,6 @@ h1 {
   transform: translateX(0);
 }
 
-
-.proposal-section {
-  background: #040C19;
-  padding: 4rem 2rem;
-  color: white;
-  position: relative;
-  left: 600px;
-  font-family: 'Anonymous Pro', monospace;
-}
-
-.proposal-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.tagline {
-  margin: 1rem 0 3rem;
-  line-height: 1.6;
-}
-
-.service-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-bottom: 3rem;
-}
-
-.service-card {
-  cursor: pointer;
-}
-
-.service-card input {
-  display: none;
-}
-
-.service-card .card-content {
-  padding: 1.5rem 1rem;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.service-card input:checked + .card-content {
-  background: rgba(255,255,255,0.2);
-  border-color: #fff;
-  transform: translateY(-5px);
-}
-
 .mobile{
   display: none;
 }
@@ -225,8 +175,18 @@ h1 {
 .work-item {
   border: 1px solid #eee;
   color: white;
-  padding: 1.5rem;
+  padding: 3.5rem;
   border-radius: 8px;
+}
+
+.workh2{
+  font-size: 30px;
+  filter:brightness(100%)
+}
+
+.work-item:hover{
+  transform: translateY(-8px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .read-more {
   display: inline-block;
@@ -347,7 +307,7 @@ h1 {
 }
 
 .testimonial-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-8px);
   box-shadow: 
     0 10px 15px rgba(0, 0, 0, 0.4),
     0 4px 6px rgba(0, 0, 0, 0.3);
@@ -425,6 +385,14 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+
+.bashk-container{
+  width: 100%;
+}
+
+
+
 /* Mobile styles */
 @media (max-width: 992px) {
   body{
@@ -458,7 +426,6 @@ h1 {
   }
 
   .logo-img{
-    right: -30px;
     top: 10px;
   }
 
@@ -485,7 +452,6 @@ h1 {
 
   .work-section{
     position: relative;
-    top: 500px;
   }
 
   .our{
@@ -503,4 +469,26 @@ h1 {
     position: relative;
     left: 55px;
   }
+  .testimonial-container{
+      margin-left: -50px;
+  }
+
+  .testih1{
+    position: relative;
+    left: -520px;
+    font-size: 60px;
+  }
+
+  .marquee-container{
+    position: relative;
+  }
+
+  .bashki{
+    position: relative;
+    top: -180px;
+    background: transparent;
+  }
+
+  
+
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import mavixLogo from "../images/mavix-transparent.png"; // Proper import
-import ProposalForm from "../components/ProposalForm";
 
 export default function Cover() {
     return (
@@ -16,7 +15,6 @@ export default function Cover() {
                     <img src={mavixLogo} width="70px" alt="Mavix Logo" />
                 </span>
             </button>
-            <ProposalForm />
         </div>
     );
 }
