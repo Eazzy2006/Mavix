@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Work() {
   // Animated counter
@@ -56,9 +57,9 @@ export default function Work() {
         marginBottom: '50px'
       }}>
         {services.map((service, index) => (
-          <a
+          <Link
             key={index}
-            href={service.link}
+            to={service.link}
             style={{
               padding: '30px 25px',
               borderRadius: '10px',
@@ -94,30 +95,16 @@ export default function Work() {
                 transition: 'width 0.3s ease'
               }}></span>
             </h2>
-          </a>
+          </Link>
         ))}
       </div>
 
-      {/* Text link (not button) */}
+      {/* Text link */}
       <div style={{ 
         textAlign: 'center',
         marginTop: '20px'
       }}>
-        <p 
-          href="/all-projects" 
-          style={{
-            color: '#a5b4fc',
-            textDecoration: 'none',
-            fontSize: '1.1rem',
-            transition: 'all 0.2s ease',
-            ':hover': {
-              color: '#38bdf8',
-              textDecoration: 'underline'
-            }
-          }}
-        >
           Klikoni për të parë projektet e mëparshme
-        </p>
       </div>
     </div>
   );

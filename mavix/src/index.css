@@ -54,7 +54,7 @@ h1 {
     max-width: 600px;
     line-height: 1.5;
     opacity: 0;
-    animation: fadeIn 1s ease-in 5s forwards; /* Fades in after typewriter completes */
+    animation: fadeIn 1s ease-in 3.5s forwards; /* Fades in after typewriter completes */
 }
 
 @keyframes fadeIn {
