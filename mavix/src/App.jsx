@@ -17,11 +17,12 @@ import Animations3D from "./pages/Animations3D";
 function App() {
   return (
     <Router>
-      <Navbar />
+
       <Routes>
         {/* Main page route - shows all your original components */}
         <Route path="/" element={
           <>
+            <Navbar />
             <Cover />
             <Work />
             <Marquee />
