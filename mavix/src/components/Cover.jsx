@@ -9,12 +9,14 @@ export default function Cover() {
             Fillo, me <span className="spani">Mavix </span>!
             </p>
            <br/>
+           <a href="#kontaktz">
             <button className="btn-40">
                 <span className="new">Let's talk!</span> 
                 <span className="old">
                     <img src={mavixLogo} width="70px" alt="Mavix Logo" />
                 </span>
             </button>
+            </a>
         </div>
     );
 }
