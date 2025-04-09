@@ -45,6 +45,7 @@ export default function Work() {
         whiteSpace: 'nowrap',
         overflow: 'hidden'
       }}>
+        <a id="sherbimet"></a>
         <span className="spani">SHËRBIMET</span> <br className="mobile"></br> TONA
       </h1>
 

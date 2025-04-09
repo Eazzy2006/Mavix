@@ -99,13 +99,13 @@
     const socialLinks = [
       { 
         icon: <InstagramIcon />, 
-        url: "https://instagram.com/yourprofile", 
+        url: "https://www.instagram.com/mavix.ks/", 
         color: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
         name: "Instagram"
       },
       { 
         icon: <FacebookIcon />, 
-        url: "https://facebook.com/yourprofile", 
+        url: "https://www.facebook.com/profile.php?id=61574342724335", 
         color: "#1877F2",
         name: "Facebook"
       },
@@ -117,7 +117,7 @@
       },
       { 
         icon: <TikTokIcon />, 
-        url: "https://tiktok.com/in/yourprofile", 
+        url: "https://www.tiktok.com/@mavix.ks", 
         color: "#0077B5",
         name: "Tiktok"
       }
@@ -166,7 +166,7 @@
         }}>
           {/* Header Section */}
           <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h1 style={{
+            <h1 className="kontaktih1" style={{
               fontSize: 'clamp(2rem, 5vw, 3.5rem)',
               fontWeight: 700,
               marginBottom: '16px',
@@ -175,16 +175,18 @@
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>
-              Le të fillojmë bashkëpunimin!
+              <a id="kontaktz"></a>
+              Le të fillojmë <br className="mobile"></br> bashkëpunimin!
             </h1>
-            <p style={{
+            <p  className="kontaktip"style={{
               fontSize: '1.25rem',
               color: '#94a3b8',
               maxWidth: '700px',
               margin: '0 auto',
               lineHeight: 1.6
             }}>
-            Na kontaktoni sot dhe le ta kthejmë vizionin tuaj në realitet.
+              
+            Na kontaktoni sot dhe le ta <br className="mobile"></br> kthejmë vizionin tuaj në realitet.
             </p>
           </div>
 
@@ -205,6 +207,7 @@
               border: '1px solid rgba(56, 189, 248, 0.1)',
               boxShadow: '0 8px 32px rgba(2, 6, 23, 0.5)'
             }}>
+                    
               <h2 style={{
                 fontSize: '1.75rem',
                 fontWeight: 600,

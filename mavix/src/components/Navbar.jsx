@@ -47,23 +47,18 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link text-white">
-                  Dashboard
+                <a href="#sherbimet" className="nav-link text-white">
+                  Shërbimet
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link text-white">
-                  Orders
+                <a href="#testimonialz" className="nav-link text-white">
+                Dëshmitë
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link text-white">
-                  Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link text-white">
-                  Customers
+                <a href="#kontaktz" className="nav-link text-white">
+                  Kontakt
                 </a>
               </li>
             </ul>

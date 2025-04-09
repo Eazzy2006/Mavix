@@ -146,23 +146,21 @@ const SocialMedia = () => {
           alt="Mavix Logo" 
           style={styles.logoImg}
         />
-        <h1 style={styles.title}>Social Media & Content Marketing</h1>
+        <h1 className='h1shat' style={styles.title}>Social Media <br className='mobile'></br>& Content Marketing</h1>
         <p style={styles.subtitle}>Gati për të shkuar viral? Le të fillojmë sot!</p>
       </header>
 
       <nav style={styles.nav}>
         <Link to="/" style={styles.navLink}>Kryefaqja</Link>
-        <Link to="/dashboard" style={styles.navLink}>Dashboard</Link>
-        <Link to="/orders" style={styles.navLink}>Orders</Link>
-        <Link to="/products" style={styles.navLink}>Products</Link>
-        <Link to="/customers" style={styles.navLink}>Customers</Link>
+        <Link to="/dashboard" style={styles.navLink}>Shërbimet</Link>
+        <Link to="/orders" style={styles.navLink}>Dëshmitë</Link>
+        <Link to="/products" style={styles.navLink}>Kontakt</Link>
       </nav>
 
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Si punojmë ne?</h2>
         <p style={styles.sectionText}>
-          Ne ndërtojmë faqe internet të shpejta, 
-          të sigurta dhe të optimizuara për SEO që të sjellin rezultate të shkëlqyera për biznesin tuaj!
+        Nuk mjafton të jesh në social media – duhet të dallosh! Ne e bëjmë atë të ndodhë.
         </p>
       </section>
 
@@ -175,6 +173,7 @@ const SocialMedia = () => {
             onClick={() => handleProjectClick(project.image)}
           >
             <img 
+              className='websitat'
               src={project.image} 
               alt={`Project ${project.id}`} 
               style={styles.projectImage}

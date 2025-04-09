@@ -43,8 +43,9 @@ export default function Testimonial() {
   return (
     <div className="testimonial-container">
       <section className="testimonial-header">
-        <h1 className="testih1">
-          Zërat e <br className="mobile"></br>  <span className="spani">Suksesit</span>
+  
+       <h1 className="testih1">
+        <a id="testimonialz"></a>         Zërat e <br className="mobile"></br>  <span className="spani">Suksesit</span>
         </h1>
         <p className="subtitle"> <span className="spani"> Klientët tanë flasin për përvojën e tyre </span></p>
       </section>

@@ -489,6 +489,9 @@ h1 {
     background: transparent;
   }
 
-  
+  .kontaktih1{
+    position: relative;
+    left: -210px;
+  }
 
 }

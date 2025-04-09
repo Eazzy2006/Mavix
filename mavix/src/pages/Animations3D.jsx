@@ -145,16 +145,15 @@ const Animations3D = () => {
           alt="Mavix Logo" 
           style={styles.logoImg}
         />
-        <h1 style={styles.title}>3D Animations</h1>
+        <h1 className='d3h1' style={styles.title}>3D Animations</h1>
         <p style={styles.subtitle}>I japim jetë ideve tuaja me animacione 3D që mbërrijnë drejt në zemër të audiencës!</p>
       </header>
 
       <nav style={styles.nav}>
         <Link to="/" style={styles.navLink}>Kryefaqja</Link>
-        <Link to="/dashboard" style={styles.navLink}>Dashboard</Link>
-        <Link to="/orders" style={styles.navLink}>Orders</Link>
-        <Link to="/products" style={styles.navLink}>Products</Link>
-        <Link to="/customers" style={styles.navLink}>Customers</Link>
+        <Link to="/dashboard" style={styles.navLink}>Shërbimet</Link>
+        <Link to="/orders" style={styles.navLink}>Dëshmitë</Link>
+        <Link to="/products" style={styles.navLink}>Kontakt</Link>
       </nav>
 
       <section style={styles.section}>
