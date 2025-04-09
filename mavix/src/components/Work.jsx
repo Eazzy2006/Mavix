@@ -20,7 +20,6 @@ export default function Work() {
   const services = [
     { title: "Website Development & SEO", link: "/web-development" },
     { title: "Social Media & Content Marketing", link: "/social-media" },
-    { title: "Graphic Design", link: "/graphic-design" },
     { title: "Interior Design", link: "/interior-design" },
     { title: "Logo Design", link: "/logo-design" },
     { title: "3D Animations", link: "/3d-animations" }

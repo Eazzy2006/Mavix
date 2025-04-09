@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/mavix-transparent.png";
+import sm1 from "../images/website-examples/Screenshot 2025-04-09 122834.png";
+import sm2 from "../images/website-examples/Screenshot 2025-04-09 123410.png";
+import sm3 from "../images/website-examples/Screenshot 2025-04-09 123452.png";
 
 const WebDevelopment = () => {
-  // Styles object with dark theme
   const styles = {
     container: {
       maxWidth: '1500px',
@@ -22,19 +24,13 @@ const WebDevelopment = () => {
       borderRadius: '10px'
     },
     title: {
-      fontSize: '3.8rem',
+      fontSize: '4rem',
       marginBottom: '1.5rem',
+      marginLeft:'100px',
       fontWeight: '800',
-      position:'relative',
-      left:'120px',
       background: 'linear-gradient(90deg, #00dbde 0%, #fc00ff 100%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent'
-    },
-    subtitle: {
-      fontSize: '1.3rem',
-      color: '#e6e6e6',
-      opacity: '0.9'
     },
     nav: {
       display: 'flex',
@@ -45,19 +41,6 @@ const WebDevelopment = () => {
       background: '#16213e',
       borderRadius: '8px',
       flexWrap: 'wrap'
-    },
-    navLink: {
-      textDecoration: 'none',
-      color: '#ffffff',
-      fontWeight: '500',
-      fontSize: '1.1rem',
-      padding: '0.5rem 1rem',
-      borderRadius: '5px',
-      transition: 'all 0.3s ease',
-      ':hover': {
-        background: 'rgba(255,255,255,0.1)',
-        transform: 'translateY(-2px)'
-      }
     },
     section: {
       marginBottom: '4rem',
@@ -71,27 +54,27 @@ const WebDevelopment = () => {
       marginBottom: '1.5rem',
       color: '#ffffff',
       position: 'relative',
-      paddingBottom: '0.5rem',
-      ':after': {
-        content: '""',
-        position: 'absolute',
-        bottom: '0',
-        left: '0',
-        width: '80px',
-        height: '4px',
-        background: 'linear-gradient(90deg, #00dbde 0%, #fc00ff 100%)',
-        borderRadius: '2px'
-      }
+      paddingBottom: '0.5rem'
     },
     sectionText: {
       lineHeight: '1.8',
       fontSize: '1.1rem',
-      color: '#e6e6e6'
+      color: '#e6e6e6',
+      marginBottom: '2rem'
     },
-    projectGrid: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-      gap: '2rem',
+    navLink: {
+      textDecoration: 'none',
+      color: '#ffffff',
+      fontWeight: '500',
+      fontSize: '1.1rem',
+      padding: '0.5rem 1rem',
+      borderRadius: '5px',
+      transition: 'all 0.3s ease'
+    },
+    projectContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '3rem',
       marginTop: '2rem'
     },
     projectCard: {
@@ -99,104 +82,61 @@ const WebDevelopment = () => {
       overflow: 'hidden',
       boxShadow: '0 8px 15px rgba(0,0,0,0.3)',
       transition: 'all 0.3s ease',
-      ':hover': {
-        transform: 'translateY(-10px)',
+      cursor: 'pointer',
+      '&:hover': {
+        transform: 'translateY(-5px)',
         boxShadow: '0 15px 30px rgba(0,0,0,0.4)'
       }
     },
     projectImage: {
-      height: '220px',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundColor: '#0f3460' // Fallback if no image
+      width: '100%',
+      height: 'auto',
+      maxHeight: '600px',
+      objectFit: 'contain',
+      border: '1px solid #2d2d42'
     },
-    projectPlaceholder: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100%',
-      background: 'rgba(0,0,0,0.3)',
-      color: '#ffffff',
-      fontSize: '1.2rem'
+    logoImg: {
+      height: "100px",
+      marginBottom: "1rem"
+    },
+    subtitle: {
+      fontSize: '1.2rem',
+      color: '#e6e6e6'
     }
   };
 
-  // Sample project data - just placeholder images
+  // Project data with links
   const projects = [
-    {
-      id: 1,
-      title: 'E-commerce Platform',
-      category: 'Web Development'
+    { 
+      id: 1, 
+      image: sm1, 
+      link: 'https://fitworld-ks.netlify.app/',
+      title: 'FitWorld KS - Fitness Center Website'
     },
-    {
-      id: 2,
-      title: 'Corporate Website',
-      category: 'Web Design'
+    { 
+      id: 2, 
+      image: sm2, 
+      link: 'https://vushtrria-fc.vercel.app/',
+      title: 'Vushtrria FC - Football Club Website'
     },
-    {
-      id: 3,
-      title: 'SEO Campaign',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 4,
-      title: 'Mobile Application',
-      category: 'App Development'
-    },
-    {
-      id: 5,
-      title: 'Brand Identity',
-      category: 'Graphic Design'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
-    {
-      id: 6,
-      title: 'Content Strategy',
-      category: 'Digital Marketing'
-    },
+    { 
+      id: 3, 
+      image: sm3, 
+      link: 'https://idrizosmani.netlify.app/',
+      title: 'Idriz Osmani - Personal Portfolio'
+    }
   ];
 
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-                    <img 
-                      src={logo} 
-                      alt="Mavix Logo" 
-                      className="logo-img"
-                      style={{ height: "100px" }}
-                    />
-        <h1 style={styles.title}>Website Development & SEO</h1>
-        <p style={styles.subtitle}>Ndërtimi i eksperiencave dixhitale që sjellin rezultate</p>
+        <img 
+          src={logo} 
+          alt="Mavix Logo" 
+          style={styles.logoImg}
+        />
+        <h1 style={styles.title}>Web Development & SEO</h1>
+        <p style={styles.subtitle}>Gati për një faqe që konverton vizitorët në klientë? Na kontaktoni sot!</p>
       </header>
 
       <nav style={styles.nav}>
@@ -208,24 +148,28 @@ const WebDevelopment = () => {
       </nav>
 
       <section style={styles.section}>
-        <h2 style={styles.sectionTitle}> Si punojmë ne? </h2>
+        <h2 style={styles.sectionTitle}>Si punojmë ne?</h2>
         <p style={styles.sectionText}>
-        Ne krijojmë faqe internet të personalizuara që janë të shpejta, të sigurta dhe të optimizuara për motorët e kërkimit. 
-        Qasja jonë e plotë kombinon dizajn të përkryer me ekselencë teknike për të ofruar rezultate të shkëlqyera për biznesin tuaj.
+          Ne krijojmë faqe internet të personalizuara që janë të shpejta, të sigurta dhe të optimizuara për motorët e kërkimit. 
+          Qasja jonë e plotë kombinon dizajn të përkryer me ekselencë teknike për të ofruar rezultate të shkëlqyera për biznesin tuaj.
         </p>
-      </section>
-
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Projektet e mëparshme</h2>
-        <div style={styles.projectGrid}>
+        
+        <h2 style={styles.sectionTitle}>Portfolio Jonë</h2>
+        <div style={styles.projectContainer}>
           {projects.map((project) => (
-            <div key={project.id} style={styles.projectCard}>
-              <div style={styles.projectImage}>
-                <div style={styles.projectPlaceholder}>
-                  {project.category}
-                </div>
-              </div>
-            </div>
+            <a 
+              key={project.id} 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={styles.projectCard}
+            >
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                style={styles.projectImage}
+              />
+            </a>
           ))}
         </div>
       </section>

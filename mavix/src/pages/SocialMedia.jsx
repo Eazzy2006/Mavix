@@ -1,6 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/mavix-transparent.png";
+import sm1 from "../images/socialmedia-examples/g1-Picsart-AiImageEnhancer.jpg";
+import sm2 from "../images/socialmedia-examples/g2-Picsart-AiImageEnhancer.jpg";
+import sm3 from "../images/socialmedia-examples/g3-Picsart-AiImageEnhancer.jpg";
+import sm4 from "../images/socialmedia-examples/g6 (2).png";
+import sm5 from "../images/socialmedia-examples/g6.png";
+import sm6 from "../images/socialmedia-examples/g7.png";
+import sm7 from "../images/socialmedia-examples/g8 (2).png";
+import sm8 from "../images/socialmedia-examples/g10.png";
+
+
+
 // Import your actual project image
 
 const SocialMedia = () => {
@@ -113,12 +124,14 @@ const SocialMedia = () => {
 
   // Project data with imported images
   const projects = [
-    { id: 1, image: logo },
-    { id: 2, image: logo },
-    { id: 3, image: logo },
-    { id: 4, image: logo },
-    { id: 5, image: logo },
-    { id: 6, image: logo }
+    { id: 1, image: sm1 },
+    { id: 2, image: sm2 },
+    { id: 3, image: sm3 },
+    { id: 4, image: sm4 },
+    { id: 5, image: sm5 },
+    { id: 6, image: sm6 },
+    { id: 7, image: sm7 },
+    { id: 8, image: sm8 },
   ];
 
   const handleProjectClick = (image) => {
@@ -134,7 +147,7 @@ const SocialMedia = () => {
           style={styles.logoImg}
         />
         <h1 style={styles.title}>Social Media & Content Marketing</h1>
-        <p style={styles.subtitle}>Ndërtimi i eksperiencave dixhitale që sjellin rezultate</p>
+        <p style={styles.subtitle}>Gati për të shkuar viral? Le të fillojmë sot!</p>
       </header>
 
       <nav style={styles.nav}>
