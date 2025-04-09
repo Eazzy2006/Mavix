@@ -1,8 +1,5 @@
-// vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
 export default defineConfig({
-  plugins: [react()],
-  base: '/myapp/'  // only if deploying to a subpath
-})
+  build: {
+    outDir: './dist',  // Relative to `mavix/`
+  },
+});
